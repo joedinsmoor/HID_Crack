@@ -17,7 +17,7 @@ class server():
             self.log_output(word)
             self.write(bytes(word))
 
-    def connection(self): #Connect to RPI
+    def connection(self): #Connect to RPI via serial, SSH instead??
         ser = serial.Serial('dev/ttyUSB0',
                         baudrate=115200,
                         parity=serial.PARITY_NONE,
